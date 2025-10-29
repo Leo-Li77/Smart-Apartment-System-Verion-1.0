@@ -10,16 +10,16 @@ public class Apartment {
     ArrayList<Boolean> iterms = new ArrayList<>(List.of(false, false, false, false, false, false, false));
 
     String name;
-    long studentID;
-    long phoneNumber;
+    String studentID;
+    String phoneNumber;
 
     Apartment() {
-        this.name = "";
-        this.studentID = 202500000000L;
-        this.phoneNumber = 11111111111L;
+        this.name = "NAME";
+        this.studentID = "000000000000";
+        this.phoneNumber = "00000000000";
     }
 
-    Apartment(String name, long studentID, long phoneNumber) {
+    Apartment(String name, String studentID, String phoneNumber) {
         setName(name);
         setStudentID(studentID);
         setPhoneNumber(phoneNumber);
@@ -30,10 +30,10 @@ public class Apartment {
     public String getName() {
         return name;
     }
-    public long getStudentID() {
+    public String getStudentID() {
         return studentID;
     }
-    public long getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -41,10 +41,10 @@ public class Apartment {
     public void setName(String name) {
         this.name = name;
     }
-    public void setStudentID(long studentID) {
+    public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

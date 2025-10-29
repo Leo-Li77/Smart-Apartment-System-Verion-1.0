@@ -6,8 +6,14 @@ public class Apartment {
     // Use ArrayList to simulate the dictionary (Use the first element in the arraylist as a key).
     // This list is created to store the objects.
     // Every person has 7 terms.
-    // "false" indicates that this person has not applied for the iterm, "true" is the opposite.
-    ArrayList<Boolean> iterms = new ArrayList<>(List.of(false, false, false, false, false, false, false));
+    /*
+    Each term has 4 status:
+      0: Not in Progress
+      1: In Progress
+      2: Successfully Processed
+      3: Processing Failed
+     */
+    ArrayList<Integer> iterms = new ArrayList<>(List.of(0, 0, 0, 0, 0, 0, 0));
 
     String name;
     String studentID;

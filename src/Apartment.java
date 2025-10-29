@@ -13,6 +13,7 @@ public class Apartment {
     String studentID;
     String phoneNumber;
 
+
     Apartment() {
         this.name = "NAME";
         this.studentID = "000000000000";

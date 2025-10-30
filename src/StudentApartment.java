@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Apartment {
+public class StudentApartment {
 
     // Use ArrayList to simulate the dictionary (Use the first element in the arraylist as a key).
     // This list is created to store the objects.
@@ -10,7 +10,7 @@ public class Apartment {
     Each term has 4 status:
       0: Not in Progress
       1: In Progress
-      2: Successfully Processed
+      2: Processing Succeeded
       3: Processing Failed
      */
     ArrayList<Integer> iterms = new ArrayList<>(List.of(0, 0, 0, 0, 0, 0, 0));
@@ -20,13 +20,13 @@ public class Apartment {
     String phoneNumber;
 
 
-    Apartment() {
+    StudentApartment() {
         this.name = "NAME";
         this.studentID = "000000000000";
         this.phoneNumber = "00000000000";
     }
 
-    Apartment(String name, String studentID, String phoneNumber) {
+    StudentApartment(String name, String studentID, String phoneNumber) {
         setName(name);
         setStudentID(studentID);
         setPhoneNumber(phoneNumber);
@@ -57,13 +57,25 @@ public class Apartment {
 
 
     //TODO
-    public void addTerm(int serialNumber) {
+    public void startApplication(int serialNumber) {
 
     }
 
 
     //TODO
     public void deleteTerm(int serialNumber) {
+
+    }
+
+
+    //TODO
+    public void applicationSuccess(int serialNumber) {
+
+    }
+
+
+    //TODO
+    public void applicationFailed(int serialNumber) {
 
     }
 
@@ -78,4 +90,4 @@ public class Apartment {
     }
 
 
-}
+} // End of StudentApartment Class
